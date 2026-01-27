@@ -197,6 +197,76 @@ This project was developed iteratively over multiple days, covering model design
 - Generated **7056 anomaly scores**
 - Abnormal frames detected and highlighted
 - Output video saved to:
+<<<<<<< HEAD
+=======
+
+
+---
+
+### 📅 Day 3 — Real-Time Detection & UI Foundation
+✅ Completed Tasks
+- Integrated live laptop camera input
+- Verified real-time anomaly detection
+- Designed web-based UI layout
+- Created dashboard for upload & results
+- Implemented upload page for surveillance videos
+- Integrated basic navigation and branding
+- Prepared frontend structure for backend API integration
+
+🎨 UI Stack
+- React + Vite
+- TypeScript
+- Tailwind CSS
+- ShadCN UI
+
+---
+
+### 📅 Day 4 — Backend–Frontend Integration
+✅ Completed Tasks
+- Exposed backend inference endpoints (API)
+- Connected frontend video upload with backend
+- Implemented request/response handling
+- Enabled backend-triggered ML inference from UI
+- Displayed processing status in UI
+- Verified video upload → inference flow
+
+---
+
+### 📅 Day 5 — Result Visualization & System Stabilization
+✅ Completed Tasks
+- Displayed anomaly detection results in UI dashboard
+- Added video playback for output videos
+- Improved anomaly marking visibility
+- Refined backend error handling
+- Improved inference stability and logging
+- Cleaned and standardized project structure
+
+---
+
+### 📅 Day 6 — Testing, Optimization & Documentation
+✅ Completed Tasks
+- Tested system on multiple video inputs
+- Verified offline and real-time detection flows
+- Optimized preprocessing and inference pipeline
+- Reduced false positives in anomaly detection
+- Added detailed README documentation
+- Updated project run instructions
+- Organized Git commits and repository history
+
+---
+
+### 📅 Day 7 — Finalization & Deployment Readiness
+✅ Completed Tasks
+- End-to-end system verification:
+
+👩‍💻 Author
+
+Rithanya Ramasamy
+B.E. Computer Engineering
+AI / ML | Full-Stack Developer
+
+GitHub: https://github.com/rithanya-305
+>>>>>>> ee9b46b857cf1bcefa319ceafecaa3f632170d51
 
 
 ---

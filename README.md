@@ -1,7 +1,7 @@
 📹 Anomaly Detection in Surveillance Videos
 
 This project detects abnormal activities in surveillance videos using deep learning.
-It supports both offline video analysis and live camera anomaly detection.
+It supports both video analysis and live camera anomaly detection.
 
 The system uses a multi-stage ML pipeline:
 Autoencoder → MLP-RNN → BF-FNN → Final anomaly decision
@@ -61,36 +61,39 @@ Produces final anomaly decision
 Used for stable detection
 
 🗂️ Project Structure
-anomaly_detection_project/
+anomaly-detection-project/
 │
 ├── backend/
-│   └── inference/
-│       ├── detect.py
-│       ├── advanced_detect.py
-│       └── predict_video.py
+│ └── inference/
+│ ├── detect.py
+│ ├── advanced_detect.py
+│ └── predict_video.py
 │
 ├── models/
-│   ├── autoencoder.py
-│   ├── mlp_rnn.py
-│   ├── bf_fnn.py
-│   └── *.pth / *.pkl
+│ ├── autoencoder.py
+│ ├── mlp_rnn.py
+│ ├── bf_fnn.py
+│ └── trained_models (*.pth / *.pkl)
 │
 ├── training/
-│   ├── train_autoencoder.py
-│   ├── train_mlp_rnn.py
-│   ├── train_bf_fnn.py
-│   └── rnn_dataset.py
+│ ├── train_autoencoder.py
+│ ├── train_mlp_rnn.py
+│ ├── train_bf_fnn.py
+│ └── rnn_dataset.py
 │
 ├── data/
-│   └── input_videos/
+│ └── input_videos/
 │
 ├── results/
-│   ├── anomaly_scores.npy
-│   └── output_videos/
+│ ├── anomaly_scores.npy
+│ └── output_videos/
 │
 ├── preprocessing/
 ├── utils/
-├── ui/ (planned)
+├── frontend/ # Web UI (React – implemented)
+├── config/
+├── requirements.txt
+├── .gitignore
 └── README.md
 
 📁 Dataset Used
@@ -134,68 +137,131 @@ VS Code
 ✔ GitHub project structure
 
 🧪 Results
-
 Generated 7056 anomaly scores
-
 Abnormal frames detected and marked
-
 Output video saved to:
-
 results/output_videos/anomaly_output.avi
-
-
 Live camera works in real time
 
-📅 Project Status
-Day 1
+## 🛠️ How to Run the Project Locally
 
-Project setup
+### 1️⃣ Clone the Repository
 
-Folder structure
+git clone https://github.com/rithanya-305/anomaly-detection-in-surveillance-videos.git
+cd anomaly-detection-in-surveillance-videos
 
-Dataset understanding
+🎓 Use Cases
+*Smart surveillance systems
+*Campus & traffic monitoring
+*Video anomaly detection research
+*Academic AI/ML projects
 
-Autoencoder implemented
+## 📈 Development Progress & Timeline
 
-Day 2
+This project was developed iteratively over multiple days, covering model design, backend inference, real-time detection, and frontend UI integration.
 
-MLP-RNN implemented and trained
+---
 
-BF-FNN implemented and trained
+### 📅 Day 1 — Project Setup & Planning
+✅ Completed Tasks
+- Finalized project topic: Anomaly Detection in Surveillance Videos
+- Defined problem scope (offline analysis + real-time detection)
+- Selected dataset: UCSD Pedestrian Dataset (Ped1 / Ped2)
+- Designed overall system architecture
+- Initialized GitHub repository
+- Set up Python environment and dependencies
+- Created base folder structure
 
-Offline video anomaly detection completed
+---
 
-Live camera anomaly detection completed
+### 📅 Day 2 — Core Anomaly Detection Pipeline
+✅ Completed Tasks
+- Implemented video preprocessing pipeline:
+  - Frame extraction
+  - Frame resizing and normalization
+- Generated clips for motion-based analysis
+- Trained Autoencoder for unsupervised anomaly detection
+- Generated anomaly scores using reconstruction error
+- Visualized anomaly scores using plots
+- Implemented video-level anomaly detection
+- Generated output video with anomaly overlay
+- Completed backend inference pipeline
+- Finalized backend folder structure
 
-Output video generation
+🧠 Models Used
+- Autoencoder (reconstruction-based anomaly detection)
+- MLP-RNN (temporal modeling – prepared)
+- BF-FNN (score refinement – prepared)
 
-GitHub updated
+📊 Results
+- Generated **7056 anomaly scores**
+- Abnormal frames detected and highlighted
+- Output video saved to:
 
-🚀 Next Steps (Day 3)
 
-Build UI using FastAPI
+---
 
-Real-time anomaly dashboard
+### 📅 Day 3 — Real-Time Detection & UI Foundation
+✅ Completed Tasks
+- Integrated live laptop camera input
+- Verified real-time anomaly detection
+- Designed web-based UI layout
+- Created dashboard for upload & results
+- Implemented upload page for surveillance videos
+- Integrated basic navigation and branding
+- Prepared frontend structure for backend API integration
 
-Live alerts
+🎨 UI Stack
+- React + Vite
+- TypeScript
+- Tailwind CSS
+- ShadCN UI
 
-Threshold tuning
+---
 
-Performance optimization
+### 📅 Day 4 — Backend–Frontend Integration
+✅ Completed Tasks
+- Exposed backend inference endpoints (API)
+- Connected frontend video upload with backend
+- Implemented request/response handling
+- Enabled backend-triggered ML inference from UI
+- Displayed processing status in UI
+- Verified video upload → inference flow
 
-YouTube demo recording
+---
 
-🎥 Demo (Coming Soon)
+### 📅 Day 5 — Result Visualization & System Stabilization
+✅ Completed Tasks
+- Displayed anomaly detection results in UI dashboard
+- Added video playback for output videos
+- Improved anomaly marking visibility
+- Refined backend error handling
+- Improved inference stability and logging
+- Cleaned and standardized project structure
 
-YouTube demo link will be added after UI integration.
+---
 
-## Day 3 Progress (23-01-2026)
+### 📅 Day 6 — Testing, Optimization & Documentation
+✅ Completed Tasks
+- Tested system on multiple video inputs
+- Verified offline and real-time detection flows
+- Optimized preprocessing and inference pipeline
+- Reduced false positives in anomaly detection
+- Added detailed README documentation
+- Updated project run instructions
+- Organized Git commits and repository history
 
-- Fixed environment issues and reinstalled VS Code
-- Activated venv and reinstalled dependencies
-- Live camera anomaly detection tested successfully
-- MLP-RNN and BF-FNN training verified
-- Git conflicts resolved and repo cleaned
-- Ready to build UI (FastAPI based)
+---
 
+### 📅 Day 7 — Finalization & Deployment Readiness
+✅ Completed Tasks
+- End-to-end system verification:
+
+👩‍💻 Author
+
+Rithanya Ramasamy
+B.E. Computer Engineering
+AI / ML | Full-Stack Developer
+
+GitHub: https://github.com/rithanya-305
 

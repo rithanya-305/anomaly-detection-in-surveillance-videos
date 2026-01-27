@@ -1,0 +1,52 @@
+# =========================
+# Python / ML
+# =========================
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Models
+models/
+*.pt
+*.pth
+*.pkl
+*.h5
+*.onnx
+
+# =========================
+# Data (large)
+# =========================
+data/
+datasets/
+raw_videos/
+input_videos/
+frames/
+clips/
+annotations/
+results/
+output_videos/
+
+# =========================
+# Frontend
+# =========================
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# =========================
+# Logs & temp
+# =========================
+*.log
+logs/
+.tmp
+.cache
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

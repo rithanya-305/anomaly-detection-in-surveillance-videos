@@ -194,9 +194,7 @@ This project was developed iteratively over multiple days, covering model design
 📊 Results
 - Generated **7056 anomaly scores**
 - Abnormal frames detected and highlighted
-- Output video saved to:
-<<<<<<< HEAD
-=======
+- Output video saved
 
 
 ---
@@ -264,7 +262,6 @@ B.E. Computer Engineering
 AI / ML | Full-Stack Developer
 
 GitHub: https://github.com/rithanya-305
->>>>>>> ee9b46b857cf1bcefa319ceafecaa3f632170d51
 
 
 ---

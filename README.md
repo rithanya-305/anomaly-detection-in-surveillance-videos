@@ -50,8 +50,6 @@ Models temporal behavior of scores
 
 Learns motion consistency over time
 
-Reduces false positives
-
 3️⃣ Bayesian Feed Forward Neural Network (BF-FNN) (Implemented)
 
 Refines anomaly confidence
@@ -118,7 +116,7 @@ NumPy
 
 Matplotlib
 
-FastAPI (UI – planned)
+Flask
 
 Git & GitHub
 
